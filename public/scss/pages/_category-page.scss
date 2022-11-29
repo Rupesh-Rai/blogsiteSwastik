@@ -1,0 +1,36 @@
+// category-page
+.category-page{
+    .most-popular-news{
+        background-color: transparent;
+    }
+    .breadcrumb{
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    .container{
+        padding: 0;
+        margin: 0;
+    }
+    .lifestyle-content{
+        width: 100% !important;
+    }
+    .lifestyle-text-img{
+        flex-direction: column;
+    }
+    .lifestyle-inner{
+        height: 500px;
+        width: 100% !important;
+    }
+    .lifestyle-inner-one{
+        flex-direction: row !important;
+        .fashion-small{
+            flex: 1;
+            margin-bottom: 40px;
+        }
+    }
+    .more-news{
+        .news{
+            width: 100% !important;
+        }
+    }
+}

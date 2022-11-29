@@ -1,0 +1,221 @@
+// footer
+.footer{
+    margin-top: 75px;
+    position:relative;
+    .footer-bg-img{
+        position: absolute;
+        z-index: -1;
+    }
+    .container{
+        .footer-text{
+            padding-top: 70px;
+            .subscribe-text{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $white;
+                .text{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    h1{
+                        color: #fff;
+                        margin-bottom: 20px;
+                    }
+                    p{
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        width: 500px;
+                        margin-bottom: 25px;
+                        text-align: center;
+                    }
+                    .input{
+                       display: flex;
+                       align-items: center;
+                        input{
+                            width: 411px;
+                            padding: 10px 13px;
+                            font-size: 16px;
+                            line-height: 24px;
+                            font-weight: 400;
+                            border-radius: 5px;
+                            &::placeholder{
+                                color: #000D3966;
+                            }
+                        }
+                        button{
+                            width: 60px;
+                            height: 45px;
+                            border-radius: 5px;
+                            transform: translateX(-20px);
+                        }
+                    }
+                }
+            }
+            .footer-list{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                margin-top: 70px;
+                @media (max-width:1200px){
+                    grid-template-columns: repeat(2, 1fr);
+                    row-gap: 50px;
+                }
+                @media (max-width:768px){
+                    grid-template-columns: 1fr;
+                }
+                .saga-logo{
+                    @media (max-width:768px){
+                        width: 100%;
+                        height: 100%;
+                    }
+                    svg{
+                        width: 282px;
+                        height: 41px;
+                        margin-bottom: 40px;
+                    }
+                    p{
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        color: #fff;
+                        margin-bottom: 30px;
+                    }
+                    .social-links{
+                        display: flex;
+                        gap: 20px;
+                        .svg{
+                            background-color: #406078;
+                            height: 35px;
+                            width: 35px;
+                            border-radius:50%;
+                            display: grid;
+                            place-items: center;
+                            &:hover{
+                                background-color: #fff;
+                            }
+                            svg{
+                                height: 100%;
+                                width: 100%;
+                                padding: 7px;
+                                fill: #fff;
+                                margin-bottom: 0;
+                                &:hover{
+                                    fill: #021845;
+                                }
+                            }
+                        }
+                    }
+                }
+                .footer-links{
+                    justify-self: center;
+                    @media (max-width:1200px){
+                       justify-self: start;
+                    }
+                }
+                h1{
+                    font-size: 20px;
+                    line-height: 24px;
+                    font-weight: 700;
+                    color: #fff;
+                    margin-bottom: 40px;
+                    @media (max-width:768px){
+                        margin-bottom: 20px;
+                    }
+                }
+                ul{
+                    margin: 0;
+                    padding: 0;
+                    li{
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 24px;
+                        &:not(:last-child){
+                            margin-bottom: 15px;
+                        }
+                        a{
+                            color: #fff;
+                        }
+                    }
+                }
+                .latest-news{
+                    @media (max-width:768px){
+                        width:100%;
+                    }
+                    .news{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 34px;
+                        @media (max-width:768px){
+                            width: 100%;
+                            justify-content: space-around;
+                        }
+                        .news-1{
+                            display: flex;
+                            gap: 12px;
+                            .img{
+                                width: 135px;
+                                height: 94px;
+                                @media (max-width:768px){
+                                    img{
+                                        object-fit:contain;
+                                    }
+                                }
+                            }
+                            .text{
+                                flex: 1;
+                                p{
+                                    font-size: 10px;
+                                    line-height: 14px;
+                                    font-weight: 600;
+                                    color: #10CFFB;
+                                    margin-bottom: 5px;
+                                }
+                                .date-time{
+                                    margin-bottom: 5px;
+                                    svg{
+                                        width: 13px;
+                                        height: 13px;
+                                        margin-right: 9px;
+                                    }
+                                    span{
+                                        font-weight: 700;
+                                        font-size: 10px;
+                                        line-height: 15px;
+                                        color: #fff ;
+                                    }
+                                }
+                                h6{
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    font-weight: 600;
+                                    color: #fff;
+                                    @media (max-width:768px){
+                                        font-size:14px;
+                                        line-height:19px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // copy-right
+    .copy-right{
+        background-color: $footer-copy-right;
+        color: #fff;
+        height:51px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 70px;
+        @media (max-width:768px){
+            margin-top: 40px;
+        }
+    }
+}

@@ -1,0 +1,164 @@
+@import "../utils/body";
+@import "../utils/color";
+@import "../utils/typography";
+@import "./footer";
+
+
+button, input{
+    border: none;
+    &:focus{
+        outline: none;
+    }
+}
+.saga-logo{
+    width: 300px;
+    height: 40px;
+    @media (max-width:992px) {
+        display: block;
+    }
+}
+svg{
+    width: 100%;
+    height: 100%;
+}
+// weatherImg
+#weatherImg{
+    width: 35px;
+    height: 35px;
+    margin-right: 13px;
+}
+
+.text-ellipsis{
+    width: 232px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.text-overflow-ellipsis{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;   
+    color: #fff;
+}                                
+.buttons{
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius:3px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff !important;
+    &:hover{
+        color: white;
+    }
+}
+.slick-slider{
+    margin-top: 30px;
+}
+.slick-arrow:not(.slick-disabled){
+    background-color: red !important;
+    i{
+        color:white !important;
+    }
+}
+.slick-arrow{
+    position: absolute;
+    right: 0;
+    top: -70px;
+    height: 39px;
+    width: 40px;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #E5E9F5;
+    i{
+        color: #E22028;
+    }
+}
+.priv_arrow{
+    right: 50px;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 43px;
+    color: $text;
+    @media (max-width:768px){
+        font-size:25px;
+        line-height: 35px;
+    }
+}
+.date-time{
+    svg{
+        width: 20px;
+        height: 20px;
+    }
+    span{
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 20px;
+        @media (max-width:768px){
+            font-size: 13px;
+            line-height: 18px;
+        }
+    }
+    
+}
+
+
+.breadcrumb{
+    margin-top: 25px;
+    align-items: center;
+    gap: 10px;
+    color: $light-color;
+    a{
+        color: $light-color;
+    }
+}
+
+.fa-circle{
+    font-size: 4px;
+}
+
+
+.bigyapan{
+    margin: 30px 0;
+    height: auto;
+}
+
+.comment-section{
+    margin-top: 20px;
+    textarea{
+        display: block;
+        margin: 30px 0;
+        padding: 20px;
+        height: 170px;
+        width: 100%;
+        resize: none;
+        border-color: $border;
+        &:focus{
+            outline: none;
+        }
+        &::placeholder{
+            color: $light-color;
+        }
+    }
+}
+
+button[type="submit"]{
+    background-color: $lifestyle;
+    padding: 10px 39px;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.translate{
+    transform: translateY(-125px);
+    margin-bottom: -30px;
+}

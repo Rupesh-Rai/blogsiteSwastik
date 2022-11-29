@@ -1,0 +1,44 @@
+$header-bg-color:#000D39;
+$fashion:#E22028;
+$lifestyle:#FF005C;
+$technology:#10CFFB;
+$politics:#0084FF ;
+$travel:#5200FF ;
+$sports:#04D087;  
+$education:#F90F10; 
+$white:#fff;
+$border:#E1E3ED;
+$text:#000D39;
+$hover-color:#E22028;
+$footer-copy-right:#40607861;
+$light-color: rgba(0, 13, 57, 0.5);
+$most-popular-news-navs-tabs:#E5E9F5;                                 
+
+
+.fashion-button{
+    background-color: $fashion;
+}
+.fashion{
+    color: $fashion;
+}
+.technology-button{
+    background-color: $technology;
+}
+.technology{
+    color: $technology;
+}
+.travel-button{
+    background-color: $travel;
+}
+.education-button{
+    background-color: $education;
+}
+.politics-button{
+    background-color: $politics;
+}
+.lifestyle-button{
+    background-color:$lifestyle ;
+}
+.sports-buttons{
+    background-color: $sports;
+}
